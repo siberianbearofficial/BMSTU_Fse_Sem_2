@@ -1,0 +1,41 @@
+\hypertarget{group__input}{}\doxysection{Ввод}
+\label{group__input}\index{Ввод@{Ввод}}
+\doxysubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+char \mbox{\hyperlink{group__input_gae22781438697b9ab42345e56d958b668}{Read\+File}} (FILE $\ast$file, int $\ast$arr, int $\ast$n)
+\begin{DoxyCompactList}\small\item\em Считывание в массив чисел из файла. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Модуль предназначен для обработки входных данных. Поддерживает работу с текстовыми файлами -\/ выделение чисел из них. 
+
+\doxysubsection{Функции}
+\mbox{\Hypertarget{group__input_gae22781438697b9ab42345e56d958b668}\label{group__input_gae22781438697b9ab42345e56d958b668}} 
+\index{Ввод@{Ввод}!ReadFile@{ReadFile}}
+\index{ReadFile@{ReadFile}!Ввод@{Ввод}}
+\doxysubsubsection{\texorpdfstring{ReadFile()}{ReadFile()}}
+{\footnotesize\ttfamily char Read\+File (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{file,  }\item[{int $\ast$}]{arr,  }\item[{int $\ast$}]{n }\end{DoxyParamCaption})}
+
+
+
+Считывание в массив чисел из файла. 
+
+Функция работает с файловой переменной, выполняя считывание целых чисел в массив. Иное содержимое файла игнорируется.
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em file} & Файловая переменная. \\
+\hline
+\mbox{\texttt{ out}}  & {\em arr} & Массив с числами из файла. \\
+\hline
+\mbox{\texttt{ out}}  & {\em n} & Количество чисел в массиве. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+EXIT\+\_\+\+SUCCESS в случае, если числа из файла были успешно записаны в массив. 
+
+LONG\+\_\+\+FILE в случае, если количество чисел в файле превышает максимально допустимое. 
+
+EMPTY\+\_\+\+FILE в случае, если файл не содержит чисел. 
+\end{DoxyReturn}
